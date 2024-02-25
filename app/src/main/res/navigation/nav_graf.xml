@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/authorizationFragment2">
+    <fragment
+        android:id="@+id/authorizationFragment2"
+        android:name="com.geektech.bigdickbro.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+<!--        <action-->
+<!--            android:id="@+id/f"-->
+<!--            app:destination="@id/registrationFragment3" />-->
+        <action
+            android:id="@+id/action_authorizationFragment2_to_voitiFragment"
+            app:destination="@id/voitiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment3"
+        android:name="com.geektech.bigdickbro.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/voitiFragment"
+        android:name="com.geektech.bigdickbro.VoitiFragment"
+        android:label="fragment_voiti"
+        tools:layout="@layout/fragment_voiti" />
+    <fragment
+        android:id="@+id/restoreFragment"
+        android:name="com.geektech.bigdickbro.RestoreFragment"
+        android:label="fragment_restore"
+        tools:layout="@layout/fragment_restore" />
+</navigation>
